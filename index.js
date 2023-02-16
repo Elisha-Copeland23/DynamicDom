@@ -36,13 +36,14 @@ class Bookmarks {
 
 
 
-    addNew(link, siteName){
-    push into the array 
-    }
-)
 
 class List{
     constructor() {
         this.list = []
     }
+    addNew = (newBookmark) => this.list.push(newBookmark)
+
 }
+
+let testMark = new Bookmarks('www.newsite.com', 'new site')
+let testList = new List()
