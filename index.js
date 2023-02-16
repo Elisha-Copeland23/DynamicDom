@@ -29,7 +29,6 @@ class List {
     addNew(newItem) {
         this.list.push(newItem)
     }
-    
 }
 
 
