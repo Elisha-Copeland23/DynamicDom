@@ -29,6 +29,7 @@ class List {
     addNew(newItem) {
         this.list.push(newItem)
     }
+    
 }
 
 
@@ -45,7 +46,7 @@ buttonAdd.addEventListener("click", function () {
     
     // let newMark = new Bookmarks(newLink, newSite);
     // let newList = new List.addNew(newItem)
-    // List.addNew(newItem);
+    List.addNew(newItem);
 })
 
     
@@ -53,5 +54,5 @@ buttonAdd.addEventListener("click", function () {
 
 // let testList = new List() 
 
-// let newMark = new Bookmarks
-// let newList = new List
+let newMark = new Bookmarks
+let newList = new List
