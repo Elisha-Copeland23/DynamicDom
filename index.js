@@ -13,18 +13,6 @@
 //     4. How can you make sure that the correct bookmark is removed?
 
 
-// const buttonAdd = document.querySelector("buttonAdd")
-// buttonAdd.addEventListener("click", function () {
-    
-
-
-// })
-
-// need array for list and add each new as object{}
-// let listArray = []
- // > key : LinkBox
- // value : NameBox
-
 class Bookmarks {
     constructor(link, siteName) {
         this.link = link;
@@ -33,20 +21,38 @@ class Bookmarks {
 }
 
 
-
-
-
-   
-)
-
-class List{
+class List {
     constructor() {
         this.list = []
     }
 
-
-
-     addNew(link, siteName){
-        this.list.push(site)
+    addNew(newItem) {
+        this.list.push(newItem)
     }
+    
 }
+
+
+let list = []
+const buttonAdd = document.getElementById("buttonAdd")
+
+buttonAdd.addEventListener("click", function () {
+
+    let newLink = document.getElementsById('LinkBox').value
+    let newSite = document.getElementsById('NameBox').value
+
+    let newItem = [newLink.value, newSite.value];
+    console.log(newItem)
+    
+    // let newMark = new Bookmarks(newLink, newSite);
+    // let newList = new List.addNew(newItem)
+    List.addNew(newItem);
+})
+
+    
+// let testMark = new Bookmarks('www.newsite.com', 'new site')
+
+// let testList = new List() 
+
+let newMark = new Bookmarks
+let newList = new List
