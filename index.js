@@ -20,7 +20,6 @@ class Bookmarks {
     }
 }
 
-
 class List {
     constructor() {
         this.list = []
@@ -29,24 +28,26 @@ class List {
     addNew(newItem) {
         this.list.push(newItem)
     }
-    
 }
 
 
-let list = []
-const buttonAdd = document.getElementById("buttonAdd")
+const button = document.getElementById("buttonAdd")
+let newLink = document.getElementById("LinkBox");
+let newSite = document.getElementById("NameBox");
 
-buttonAdd.addEventListener("click", function () {
 
-    let newLink = document.getElementsById('LinkBox').value
-    let newSite = document.getElementsById('NameBox').value
+button.addEventListener("click", function () {
 
-    let newItem = [newLink.value, newSite.value];
+    let linkStored = newLink.value;
+    let siteStored = newSite.value;
+    console.log(linkStored, "linkStored")
+
+    let newItem = new Bookmarks(linkStored, siteStored);
     console.log(newItem)
     
     // let newMark = new Bookmarks(newLink, newSite);
     // let newList = new List.addNew(newItem)
-    List.addNew(newItem);
+    // List.addNew(newItem);
 })
 
     
@@ -54,5 +55,5 @@ buttonAdd.addEventListener("click", function () {
 
 // let testList = new List() 
 
-let newMark = new Bookmarks
-let newList = new List
+// let newMark = new Bookmarks
+// let newList = new List
