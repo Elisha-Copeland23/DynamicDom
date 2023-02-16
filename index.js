@@ -21,7 +21,7 @@
 // })
 
 // need array for list and add each new as object{}
-let listArray = []
+// let listArray = []
  // > key : LinkBox
  // value : NameBox
 
