@@ -21,7 +21,7 @@
 // })
 
 // need array for list and add each new as object{}
-let listArray = []
+// let listArray = []
  // > key : LinkBox
  // value : NameBox
 
@@ -36,13 +36,17 @@ class Bookmarks {
 
 
 
-    addNew(link, siteName){
-    push into the array 
-    }
+   
 )
 
 class List{
     constructor() {
         this.list = []
+    }
+
+
+
+     addNew(link, siteName){
+        this.list.push(site)
     }
 }
