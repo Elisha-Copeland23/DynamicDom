@@ -12,3 +12,37 @@
 //     3. What UI element allows a user to remove a previously added bookmark?
 //     4. How can you make sure that the correct bookmark is removed?
 
+
+// const buttonAdd = document.querySelector("buttonAdd")
+// buttonAdd.addEventListener("click", function () {
+    
+
+
+// })
+
+// need array for list and add each new as object{}
+let listArray = []
+ // > key : LinkBox
+ // value : NameBox
+
+class Bookmarks {
+    constructor(link, siteName) {
+        this.link = link;
+        this.siteName = siteName;
+    }
+}
+
+
+
+
+
+    addNew(link, siteName){
+    push into the array 
+    }
+)
+
+class List{
+    constructor() {
+        this.list = []
+    }
+}
